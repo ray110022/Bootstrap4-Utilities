@@ -175,12 +175,14 @@
 
       <div class="col-md-9 post">
         <!-- 練習開始 -->
-        <h1 class="mt-0">Breadcrumb</h1>
+        <h1 class="mt-0">麵包屑 (Breadcrumb)</h1>
 
-        <p>加入 breadcrumb 觀察 ::before 和 content 其變化</p>
+        <p>✔加入 breadcrumb 觀察 ::before 和 content 其變化<hr>
+          有2個(含)以上的li，就會自動加分隔符號
+        </p>
 
         <div class="demo">
-          <ol class="目標">
+          <ol class="breadcrumb">
             <li class="breadcrumb-item active">Home</li>
           </ol>
           <ol class="breadcrumb">
@@ -195,13 +197,13 @@
         </div>
 
 
-        <p>麵包屑呈現不需要透過 li 也能運作，將 "here" 換成 a 標籤 </p>
+        <p>✔麵包屑呈現不需要透過 li 也能運作，將 "here" 換成 a 標籤 </p>
 
         <div class="demo">
           <nav class="breadcrumb">
-            <here class="breadcrumb-item" href="#">Home</here>
-            <here class="breadcrumb-item" href="#">Library</here>
-            <here class="breadcrumb-item" href="#">Data</here>
+            <a class="breadcrumb-item" href="#">Home</a>
+            <a class="breadcrumb-item" href="#">Library</a>
+            <a class="breadcrumb-item" href="#">Data</a>
             <span class="breadcrumb-item active">Bootstrap</span>
           </nav>
         </div>

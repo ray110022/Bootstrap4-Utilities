@@ -175,17 +175,17 @@
 
       <div class="col-md-9 post">
         <!-- 練習開始 -->
-        <h1 class="mt-0">Popovers</h1>
+        <h1 class="mt-0">彈出提示框 (Popovers)</h1>
 
         <h2>範例</h2>
 
-        <p>將以下的 "script" 註解移除，使其能夠運作</p>
+        <p>✔將以下的 "script" 註解移除，使其能夠運作</p>
 
         <div class="demo">
           <script>
-            // $(function () {
-  //   $('[data-toggle="popover"]').popover()
-  // })
+            $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
   </script>
 
           <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click
@@ -194,33 +194,39 @@
 
         <hr>
 
-        <p>將以下的 "目標"，替換成不同方向 (top, right, bottom, left)</p>
+        <p>✔將以下的 "目標"，替換成不同方向 (top, right, bottom, left)</p>
 
         <div class="demo">
-          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on top
           </button>
 
-          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on right
           </button>
 
-          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus
-  sagittis lacus vel augue laoreet rutrum faucibus.">
+          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on bottom
           </button>
 
-          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="目標" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          <button type="button" class="btn btn-secondary" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on left
           </button>
         </div>
 
         <hr>
 
-        使用 data-trigger="focus" 以便用戶進行下一次點擊時移除這個彈出提示框。
+        ✔使用 data-trigger="focus" 以便用戶進行下一次點擊時移除這個彈出提示框。
 
         <div class="demo">
-          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" title="Dismissible popover"
+          <a tabindex="0" class="btn btn-lg btn-danger" data-trigger="focus" role="button" data-toggle="popover" title="Dismissible popover"
+            data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+        </div>
+
+        ✔使用 data-trigger="hover" 以滑鼠指標 顯示/移除這個彈出提示框。
+
+        <div class="demo">
+          <a tabindex="0" class="btn btn-lg btn-danger" data-trigger="hover" role="button" data-toggle="popover" title="Dismissible popover"
             data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
         </div>
 

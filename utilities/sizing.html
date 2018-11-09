@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="over-flow-x">
+<body class="over-flow-x mb-5">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="../index.html">Bootstrap 練習手冊</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
@@ -145,31 +145,42 @@
 
       <div class="col-md-9 post">
         <!-- 練習開始 -->
-        <h1 class="mt-0">Sizing</h1>
+        <h1 class="mt-0">尺寸 (Sizing)</h1>
 
-        <p>將以下的 "目標"，替換成 不同數值 使其顯示改變 (25, 50, 75, 100)</p>
+        <p>✔將以下的 "目標"，替換成 不同數值 使其顯示改變 (25, 50, 75, 100)</p>
 
         <div class="demo">
-          <div class="w-目標 p-3" style="background-color: #eee;">Width 25%</div>
-          <div class="w-目標 p-3" style="background-color: #eee;">Width 50%</div>
-          <div class="w-目標 p-3" style="background-color: #eee;">Width 75%</div>
-          <div class="w-目標 p-3" style="background-color: #eee;">Width 100%</div>
+          <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+          <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+          <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+          <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
 
           <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
-            <div class="h-目標 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
-            <div class="h-目標 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
-            <div class="h-目標 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
-            <div class="h-目標 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+            <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+            <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+            <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+            <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
           </div>
         </div>
 
         <hr>
-        <p>mw, mh 分別代表 max-width: 100%; 和 max-height: 100%;</p>
+        <p>✔mw, mh 分別代表 max-width: 100%; 和 max-height: 100%;，<br>
+          不管子元素原本寬高多少，只要設定了 mw-100 、 mh-100 ，寬高就會跟父元素一樣</p>
 
         <div class="demo">
-          <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
-            <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,0.1);">Max-height
-              100%</div>
+          <h5>父元素 高度100px</h5>
+          <div style="height: 100px; background-color: #ff00001a;">
+            <div class="mh-100 w-50" style="height: 150px; background-color: #f1e420;">
+              子元素 Max-height 100%<br> 高度:150px
+            </div>
+          </div>
+          <hr>
+          <h5>父元素 最大寬度807px</h5>
+          <div style="height: 100px; background-color: #ff00001a;">
+            <div class="mw-100 h-100" style="width: 900px; background: url('https://picsum.photos/g/810/100/?random')">
+              子元素 max-width: 100%<br>
+                寬度:900px
+            </div>
           </div>
         </div>
 

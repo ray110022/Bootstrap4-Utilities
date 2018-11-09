@@ -17,7 +17,7 @@
 </head>
 
 <body class="over-flow-x">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
     <a class="navbar-brand" href="../index.html">Bootstrap 練習手冊</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -179,30 +179,31 @@
 
         <h2>範例</h2>
 
-        <p>將以下的 "目標"，替換成 navbar 使其顯示正確</p>
+        <p>✔將以下的 "目標"，替換成 navbar 使其顯示正確</p>
 
         <div class="demo">
-          <nav class="目標 目標-light bg-light">
+          <!-- As a link -->
+          <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
           </nav>
 
           <!-- As a heading -->
-          <nav class="目標 目標-light bg-light">
-            <span class="navbar-brand mb-0">Navbar</span>
+          <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Navbar</span>
           </nav>
         </div>
 
         <hr>
 
-        <p>將以下的 "目標"，替換成不同尺寸 (sm, lg) 使其改變響應式的顯示</p>
+        <p>✔將以下的 "目標"，替換成不同尺寸 (sm, lg) 使其改變響應式的顯示</p>
 
-        <p>將以下的 "對應 ID"，替換成 #navbarSupportedContent 使其能夠運作</p>
+        <p>✔將以下的 "對應 ID"，替換成 #navbarSupportedContent 使其能夠運作</p>
 
         <div class="demo">
-          <nav class="navbar navbar-expand-目標 navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="對應 ID" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -225,15 +226,16 @@
             </div>
           </nav>
         </div>
+        <hr>
 
 
         <h2>品牌</h2>
 
-        <p>將以下的 "目標"，替換成 navbar-brand 使其顯示正確</p>
+        <p>✔將以下的 "目標"，替換成 navbar-brand 使其顯示正確</p>
 
         <div class="demo">
           <nav class="navbar navbar-light bg-light">
-            <a class="目標" href="#">
+            <a class="navbar-brand" href="#">
               <img src="http://www.hexschool.com/images/logo.png" width="164" height="39" alt="">
             </a>
           </nav>
@@ -241,11 +243,11 @@
 
         <h2>表單</h2>
 
-        <p>將以下的 "目標"，替換成 form-inline 使其顯示正確</p>
+        <p>✔將以下的 "目標"，替換成 form-inline 使其顯示正確</p>
 
         <div class="demo">
           <nav class="navbar navbar-light bg-light">
-            <form class="目標">
+            <form class="form-inline">
               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
@@ -254,22 +256,22 @@
 
         <h2>顏色</h2>
 
-        <p>將以下的 "目標"，替換成不同色彩</p>
+        <p>✔將以下的 "目標"，替換成不同色彩</p>
 
         <div class="demo">
-          <nav class="navbar navbar-dark bg-目標">
+          <nav class="navbar navbar-dark bg-danger">
             <span class="navbar-text">
               Navbar text with an inline element
             </span>
           </nav>
 
-          <nav class="navbar navbar-dark bg-目標">
+          <nav class="navbar navbar-dark bg-warning">
             <span class="navbar-text">
               Navbar text with an inline element
             </span>
           </nav>
 
-          <nav class="navbar navbar-light" style="background-color: 目標;">
+          <nav class="navbar navbar-light" style="background-color: #d5d5d5;">
             <span class="navbar-text">
               Navbar text with an inline element
             </span>
@@ -279,24 +281,26 @@
 
         <h2>定位</h2>
 
-        <div class="demo">
+        <div class="demo" style=" ">
           <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">Full width</a>
           </nav>
 
-          <nav class="navbar navbar-light bg-light">
+          <nav class="navbar navbar-light bg-warning fixed-top mt-4" style="z-index: 0;">
             <!-- 加入 fixed-top -->
             <a class="navbar-brand" href="#">Fixed top</a>
           </nav>
 
-          <nav class="navbar navbar-light bg-light">
+          <nav class="navbar navbar-light bg-secondary fixed-bottom">
             <!-- 加入 fixed-bottom -->
             <a class="navbar-brand" href="#">Fixed bottom</a>
           </nav>
 
-          <nav class="navbar navbar-light bg-light">
+          <nav class="navbar navbar-light bg-primary sticky-top mt-3">
             <!-- 加入 sticky-top -->
-            <a class="navbar-brand" href="#">Sticky top</a>
+            <a class="navbar-brand" href="#">Sticky top
+            </a>
+            <p class="nav">當頁面滾動至物件位置時，會固定在頂部並停留在那裡</p>
           </nav>
         </div>
 

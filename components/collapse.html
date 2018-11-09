@@ -175,7 +175,7 @@
 
       <div class="col-md-9 post">
         <!-- 練習開始 -->
-        <h1 class="mt-0">Collapse</h1>
+        <h1 class="mt-0">折疊 (Collapse)</h1>
 
         <h2>JavaScript</h2>
 
@@ -187,32 +187,37 @@
           </ul>
         </div>
 
-        <p>將以下的 "目標"，替換成 data-toggle="collapse" 使其能夠運作</p>
+        <p>✔將以下的 "目標"，替換成 data-toggle="collapse" 使其能夠運作</p>
 
         <div class="demo">
           <p>
-            <a class="btn btn-primary" 目標 href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
               Link with href
             </a>
-            <button class="btn btn-primary" type="button" 目標 data-target="#collapseExample" aria-expanded="false"
-              aria-controls="collapseExample">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
               Button with data-target
             </button>
           </p>
-          <div class="collapse" id="collapseExample">
+          <div class="collapse" id="collapseExample1">
             <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-              anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              陳巧穎
             </div>
           </div>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+              干那D
+            </div>
+          </div>
+
+
         </div>
 
 
-        <p>將以下的 "目標"，替換成 對應的 id 使其能夠運作</p>
+        <p>✔將以下的 "目標"，替換成 對應的 id 使其能夠運作</p>
 
         <div class="demo">
           <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#目標" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle
+            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle
               first element</a>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#目標" aria-expanded="false"
               aria-controls="multiCollapseExample1">Toggle second element</button>
@@ -242,14 +247,14 @@
 
         <h2>口風琴折疊</h2>
 
-        <p>將以下的 "目標"，替換成 data-toggle="collapse" 使其能夠運作</p>
+        <p>✔將以下的 "目標"，替換成 data-toggle="collapse" 使其能夠運作</p>
 
         <div class="demo">
           <div id="accordion" role="tablist">
             <div class="card">
               <div class="card-header" role="tab" id="headingOne">
                 <h5 class="my-0">
-                  <a 目標 href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Collapsible Group Item #1
                   </a>
                 </h5>
@@ -270,7 +275,7 @@
             <div class="card">
               <div class="card-header" role="tab" id="headingTwo">
                 <h5 class="my-0">
-                  <a class="collapsed" 目標 href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Collapsible Group Item #2
                   </a>
                 </h5>
@@ -290,7 +295,7 @@
             <div class="card">
               <div class="card-header" role="tab" id="headingThree">
                 <h5 class="my-0">
-                  <a class="collapsed" 目標 href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Collapsible Group Item #3
                   </a>
                 </h5>

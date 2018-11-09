@@ -178,15 +178,16 @@
         <h1 class="mt-0">Card</h1>
 
         <h2>範例</h2>
-        <p>將以下的 "目標" 均替換成 card</p>
+        <p>✔將以下的 "目標" 均替換成 card</p>
 
         <div class="demo">
-          <div class="目標" style="width: 20rem;">
-            <img class="目標-img-top" src="http://lorempixel.com/640/480/food" alt="Card image cap">
-            <div class="目標-body">
-              <h4 class="目標-title">Card title</h4>
-              <h6 class="目標-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="目標-text">Some quick example text to build on the card title and make up the bulk of the card's
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="https://picsum.photos/300/?random" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
                 content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -195,23 +196,24 @@
               <li class="list-group-item">Dapibus ac facilisis in</li>
               <li class="list-group-item">Vestibulum at eros</li>
             </ul>
-            <div class="目標-body">
+            <div class="card-body">
               <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>
             </div>
-            <img class="目標-img-bottom" src="http://lorempixel.com/640/480/food" alt="Card image cap">
+
           </div>
 
-          <div class="目標 text-center">
-            <div class="目標-header">
+          <div class="card text-center">
+            <div class="card-header">
               Featured
             </div>
+            <img class="card-img-bottom" src="https://picsum.photos/600/?random" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Special title treatment</h4>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary d-block">Go somewhere</a>
             </div>
-            <div class="目標-footer text-muted">
+            <div class="card-footer text-muted">
               2 days ago
             </div>
           </div>
@@ -219,11 +221,11 @@
 
         <h2>縮放</h2>
 
-        <p>修改以下 grid 數值，來調整卡片尺寸</p>
+        <p>✔修改以下 grid 數值，來調整卡片尺寸</p>
 
         <div class="demo">
           <div class="row">
-            <div class="col-sm-目標">
+            <div class="col-sm-4">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Special title treatment</h4>
@@ -232,7 +234,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-目標">
+            <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Special title treatment</h4>
@@ -247,10 +249,17 @@
 
         <h2>對齊</h2>
 
-        <p>修改以下的對齊方法，加入 text-center, text-right</p>
+        <p>✔修改以下的對齊方法，加入 text-center, text-right</p>
 
         <div class="demo">
-          <div class="card w-50 目標">
+          <div class="card w-50 text-center">
+            <div class="card-body">
+              <h4 class="card-title">Special title treatment</h4>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card text-right">
             <div class="card-body">
               <h4 class="card-title">Special title treatment</h4>
               <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -261,12 +270,12 @@
 
         <h2>導覽</h2>
 
-        <p>加入 card-header-tabs 使其排版正確</p>
+        <p>✔加入 card-header-tabs 使其排版正確</p>
 
         <div class="demo">
           <div class="card text-center">
             <div class="card-header">
-              <ul class="nav nav-tabs 目標">
+              <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Active</a>
                 </li>
@@ -287,12 +296,12 @@
         </div>
 
 
-        <p>加入 card-header-pills 使其排版正確</p>
+        <p>✔加入 card-header-pills 使其排版正確</p>
 
         <div class="demo">
           <div class="card text-center">
             <div class="card-header">
-              <ul class="nav nav-pills 目標">
+              <ul class="nav nav-pills card-header-pills">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Active</a>
                 </li>
@@ -315,12 +324,15 @@
 
         <h2>圖像覆蓋</h2>
 
-        <p>將以下的 "目標"，替換成 card-img 使其排版正確</p>
+        <p>✔將以下的 "目標"，替換成 card-img 使其排版正確，<br>
+          將圖像轉換為卡片背景，並疊加卡片的文字
+
+        </p>
 
         <div class="demo">
-          <div class="card bg-dark text-white">
-            <img class="目標" src="http://lorempixel.com/640/480/food" alt="Card image">
-            <div class="目標-overlay">
+          <div class="card bg-light text-white">
+            <img class="card-img" src="http://lorempixel.com/640/480/food" alt="Card image">
+            <div class="card-img-overlay text-dark">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
@@ -331,10 +343,10 @@
 
         <h2>使用 utilities 改變不同色彩</h2>
 
-        <p>將以下的 "目標"，替換成 utilities 色彩 (primary, secondary, success, danger, warning, info, light, dark)</p>
+        <p>✔將以下的 "目標"，替換成 utilities 色彩 (primary, secondary, success, danger, warning, info, light, dark)</p>
 
         <div class="demo">
-          <div class="card text-white bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Primary card title</h4>
@@ -342,7 +354,7 @@
                 card's content.</p>
             </div>
           </div>
-          <div class="card text-white bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Secondary card title</h4>
@@ -350,7 +362,7 @@
                 card's content.</p>
             </div>
           </div>
-          <div class="card text-white bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Success card title</h4>
@@ -358,7 +370,7 @@
                 card's content.</p>
             </div>
           </div>
-          <div class="card text-white bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Danger card title</h4>
@@ -366,7 +378,7 @@
                 card's content.</p>
             </div>
           </div>
-          <div class="card text-white bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Warning card title</h4>
@@ -374,7 +386,7 @@
                 card's content.</p>
             </div>
           </div>
-          <div class="card text-white bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Info card title</h4>
@@ -382,7 +394,7 @@
                 card's content.</p>
             </div>
           </div>
-          <div class="card bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card bg-light mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Light card title</h4>
@@ -390,7 +402,7 @@
                 card's content.</p>
             </div>
           </div>
-          <div class="card text-white bg-目標 mb-3" style="max-width: 20rem;">
+          <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
               <h4 class="card-title">Dark card title</h4>
@@ -402,21 +414,21 @@
 
         <h2>外框線色彩</h2>
 
-        <p>將以下的 "目標"，替換成 utilities 色彩 (primary, secondary, success, danger, warning, info, light, dark)</p>
+        <p>✔將以下的 "目標"，替換成 utilities 色彩 (primary, secondary, success, danger, warning, info, light, dark)</p>
 
         <div class="demo">
-          <div class="card border-目標 mb-3" style="max-width: 20rem;">
-            <div class="card-header">Header</div>
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header border-primary">Header</div>
             <div class="card-body text-primary">
               <h4 class="card-title">Primary card title</h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
             </div>
           </div>
-          <div class="card border-目標 mb-3" style="max-width: 20rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-secondary">
-              <h4 class="card-title">Secondary card title</h4>
+          <div class="card border-success mb-3" style="max-width: 20rem;">
+            <div class="card-header border-success">Header</div>
+            <div class="card-body text-success">
+              <h4 class="card-title">Success card title</h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                 card's content.</p>
             </div>
@@ -425,11 +437,11 @@
 
         <h2>移除背景色</h2>
 
-        <p>將以下的 "目標"，替換成 transparent </p>
+        <p>✔將以下的 "目標"，替換成 transparent </p>
 
         <div class="demo">
           <div class="card border-success mb-3" style="max-width: 20rem;">
-            <div class="card-header bg-目標 border-success">Header</div>
+            <div class="card-header bg-transparent border-success">Header</div>
             <div class="card-body text-success">
               <h4 class="card-title">Success card title</h4>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -441,10 +453,10 @@
 
         <h2>卡片群組</h2>
 
-        <p>將以下的 "目標"，替換成 card-group </p>
+        <p>✔將以下的 "目標"，替換成 card-group </p>
 
         <div class="demo">
-          <div class="目標">
+          <div class="card-group">
             <div class="card">
               <img class="card-img-top" src="http://lorempixel.com/640/480/food" alt="Card image cap">
               <div class="card-body">
@@ -482,10 +494,10 @@
 
         <p>需要一套互不相連但寬度和高度相同的卡片</p>
 
-        <p>將以下的 "目標"，替換成 card-deck </p>
+        <p>✔將以下的 "目標"，替換成 card-deck </p>
 
         <div class="demo">
-          <div class="目標">
+          <div class="card-deck">
             <div class="card">
               <img class="card-img-top" src="http://lorempixel.com/640/480/food" alt="Card image cap">
               <div class="card-body">
@@ -518,10 +530,12 @@
 
         <h2>卡片欄</h2>
 
-        <p>將以下的 "目標"，替換成 card-columns </p>
+        <p>✔將以下的 "目標"，替換成 card-columns <br>
+將它們包在 .card-columns 中，可以將卡片像 <a href="https://masonry.desandro.com/">Masonry</a> 那樣的瀑布式排列。卡片是使用 CSS column 屬性而不是 flexbox 來構建，更便於對齊。排列是從上到下、從左到右。
+        </p>
 
         <div class="demo">
-          <div class="目標">
+          <div class="card-columns">
             <div class="card">
               <img class="card-img-top" src="http://lorempixel.com/640/480/food" alt="Card image cap">
               <div class="card-body">
@@ -548,7 +562,7 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
-            <div class="card bg-primary p-3 text-center">
+            <div class="card bg-warning p-3 text-center">
               <blockquote class="blockquote mb-0">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
                 <footer class="blockquote-footer">
